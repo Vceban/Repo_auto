@@ -13,7 +13,11 @@ public class AutoClasswork {
 
 private String manufacturer, model;
 private int year, motorCapacity;
-private char type;
+MotorType type;
+
+    public MotorType getType() {
+        return type;
+    }
 
     public String getModel() {
         return model;
@@ -25,7 +29,7 @@ private char type;
         return year;
     }
 
-AutoClasswork(String manufacturer, String model, int year, int motorCapacity, char type){
+AutoClasswork(String manufacturer, String model, int year, int motorCapacity, MotorType type){
     this.manufacturer = manufacturer;
     this.model = model;
     this.year = year;
